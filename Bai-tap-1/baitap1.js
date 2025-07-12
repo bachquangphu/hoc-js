@@ -4,7 +4,7 @@ function nhapDiem(tenMonHoc, nhap) {
   console.log("Điểm môn " + tenMonHoc + " : " + num);
   if (nhap == null || nhap == "") {
     console.error("vui lòng nhập số không được để trống ");
-    process.process.exit(1);
+    process.exit(1);
   } else {
     if (!Number.isFinite(num)) {
       console.error("điểm là số vui lòng nhập lại ");
