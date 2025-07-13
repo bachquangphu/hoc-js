@@ -23,12 +23,6 @@ function nhapDiem(tenMonHoc, nhap) {
   console.log("Điểm môn " + tenMonHoc + " " + num);
   return num;
 };*/
-const diemToan = nhapDiem("Môn Toán", prompt("nhập điểm Toán "));
-const diemVan = nhapDiem("Môn Văn", prompt("nhập điểm Văn "));
-const diemAnh = nhapDiem("Môn Anh", prompt("Nhập điểm Anh "));
-
-const tb = (diemToan + diemVan + diemAnh) / 3;
-console.log("điểm trung bình là " + tb);
 function phanLoai(diemTB) {
   if (diemTB >= 8.5) {
     console.log("Xếp loại Giỏi");
@@ -40,4 +34,11 @@ function phanLoai(diemTB) {
     console.log("Xếp loại Yếu");
   }
 }
+const diemToan = nhapDiem("Môn Toán", prompt("nhập điểm Toán "));
+const diemVan = nhapDiem("Môn Văn", prompt("nhập điểm Văn "));
+const diemAnh = nhapDiem("Môn Anh", prompt("Nhập điểm Anh "));
+
+const tb = (diemToan + diemVan + diemAnh) / 3;
+console.log("điểm trung bình là " + tb);
+
 phanLoai(tb);
